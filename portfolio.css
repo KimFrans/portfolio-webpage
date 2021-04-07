@@ -50,10 +50,20 @@ body{
     float: right;
     margin-right: 35%;
     margin-top: -15%;
+    clear: left;
 }
 
 .row1 .name-col .name-img{
     float: left;
     margin-left: 20%;
     margin-top: 5%;
+}
+
+.row2 .descrip-heading h2{
+    text-align: center;
+}
+
+.row2 .description p{
+    width: 100%;
+    text-align: center;
 }

@@ -6,7 +6,7 @@ body{
     background-color: rgb(245, 146, 220);
 }
 
-@media(min-width:800px){
+@media(max-width:800px){
     .menu {
         display: flex;
     }
@@ -35,7 +35,76 @@ body{
     /* Change the menu color to darker green when hovering over a link*/
     background-color : rgb(45, 204, 204);
 }
+/*navbar container*/
+.navbar{
+    overflow: hidden;
+    background-color: rgb(142, 198, 243);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*links inside the navbar*/
+.navbar a{
+    float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*the dropdown container*/
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+/*dropdown button*/
+.dropdown .dropbtn{
+    font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn { opacity: 1;
+    background-color: rgba(245, 138, 231, 0.877); 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.5s;
+}
 
+/* Dropdown content (hidden by default) */
+.dropdown-content{
+    display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+/* .dropdown-content a:hover{
+    background-color: #ddd;
+} */
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
 
 .portfolio{
     text-align: center;
@@ -43,20 +112,29 @@ body{
 
 .row1{
     display: grid;
-    grid-template-columns: 50%, 50%;
+    grid-template-columns: 60%, 40%;
 }
 
 .row1 .name-col h1{
     float: right;
     margin-right: 35%;
     margin-top: -15%;
-    clear: left;
+    /* clear: left; */
+    max-width: 100%;
+    height: auto;
+}
+
+.row1 .name-col{
+    float: left;
 }
 
 .row1 .name-col .name-img{
-    float: left;
+    /* float: left; */
     margin-left: 20%;
     margin-top: 5%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .row2 .descrip-heading h2{
@@ -66,4 +144,18 @@ body{
 .row2 .description p{
     width: 100%;
     text-align: center;
+}
+
+.footer{
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(148, 170, 243);
+    color: white;
+    text-align: center;
+}
+
+.footer li{
+    list-style: none;
 }

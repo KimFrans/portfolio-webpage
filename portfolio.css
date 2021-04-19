@@ -119,22 +119,30 @@ body{
     float: right;
     margin-right: 35%;
     margin-top: -15%;
-    /* clear: left; */
+    clear: left;
     max-width: 100%;
     height: auto;
+    text-align: center;
 }
 
-.row1 .name-col{
+/* .row1 .name-col{
     float: left;
-}
+} */
 
-.row1 .name-col .name-img{
-    /* float: left; */
-    margin-left: 20%;
-    margin-top: 5%;
+.row1 .name-img{
+    float: left;
+    margin-left: 10%;
+    /* margin-top: 5%; */
     max-width: 100%;
     height: auto;
     border-radius: 50%;
+    clear: left;
+}
+
+.row1 .name-img::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .row2 .descrip-heading h2{

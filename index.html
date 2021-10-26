@@ -1,81 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="simple-grid.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-    <div style="background-image: url(images/background.png);">
 
-        <!-- <div class="container"> -->
+    <div class="container">
 
-            <!-- <div class="header">
-                <ul class="menu">
-                    <li><a href="https://kimfrans.github.io/basic-webpage/">basic webpage</a></li>
-                    <li><a href="https://kimfrans.github.io/bootcamp-tests/">bootcamp tests</a></li>
-                    <li><a href="https://github.com/KimFrans">Github profile</a></li>
-    
-                </ul>
-            </div> -->
-            <div class="navbar">
-                <a href="https://kimfrans.github.io/portfolio-webpage/">Home</a>
-                <a href="https://github.com/KimFrans">Github Profile</a>
-                <div class="dropdown">
-                  <button class="dropbtn">Projects
-                    <i class="down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="https://kimfrans.github.io/basic-webpage/">Basic webpage</a>
-                    <a href="https://kimfrans.github.io/bootcamp-tests/">Bootcamp test</a>
-                    <a href="https://kimfrans.github.io/dom-intro/">DOM widgets</a>
-                    <a href="https://kimfrans.github.io/dom-intro/dom-tests/">DOM widget Tests</a>
-                  </div>
-                </div>
-              </div>
-    
-            <div class="portfolio">
-                <h1>Welcome to Kim's Portfolio</h1>
+
+        <div class="navbar">
+            <!-- <a href="https://kimfrans.github.io/portfolio-webpage/">Home</a> -->
+            <a href="https://github.com/KimFrans">Github Profile</a>
+            <a href="https://docs.google.com/document/d/1q9NAWQQbyyh8cQZe_9t52NjHDdS4T_EfZ75dtMcLJDc/edit">CV</a>
+        </div>
+
+        <div class="portfolio">
+            <h1>Kim's Portfolio</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <img class="name-img" src="images/me.jpg" alt="me">
             </div>
-        
-            <div class="row1">
-                <div class="name-col">
-                    <img class="name-img" src="images/me.jpg" alt="me">
+            <div class="col-7">
+                <h2>Kim Frans</h2>
+                <h2>Web Developer</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h3>Brief description of me</h3>
+                <p>
+                    I'd describe myself as someone who is motivated, committed and ambitious. I believe in team-work and
+                    collaboration, for the simple reason that working in a team with a collaborative spirit is important
+                    when the need arises. Interity and authenticity are important to me. I do what I can to continue to
+                    improve and be the best I can be at whatever I do. I am accountable and I believe by taking
+                    responsibility for my actions and results, I have the ability to make the choices necessary for a
+                    better outcome or results the next time around. I don't let tough decisions control me. Instead, I
+                    evaluate them and decide the best way to approach the situation for the best results. I am
+                    hardworking and set reasonable goals for myself. Once those are in place, I can then back out of
+                    them and create smaller goals to accomplish so I can continuously evaluate my performance. I strive
+                    to do my best for whatever task is presented to me.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h3>My Projects</h3>
+            </div>
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="site-background">
+                                <h5>Basic Webpage</h5>
+                            </div>
+                            <!-- <h5>Basic Webpage</h5> -->
+                            <!-- <img src="" alt="webpage" style="width:300px;height:300px;"> -->
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-back1">
+                                <a href="https://kimfrans.github.io/basic-webpage/">Click here to visit Basic webpage</a>
+                                <p>This webpage was created to be an introductory webpage about myself as well as a
+                                    project to help me practice and explore the bsic html and css concepts</p>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="name-col">
-                    <h1>Kim <br> Frans</h1>
+            </div>
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Greetings</h5>
+                            <!-- <img src="" alt="greetings" style="width:300px;height:300px;"> -->
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-back2">
+                                <a href="https://kimfrans.github.io/greetings/">Click here to visit Greetings</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis commodo quam vel vehicula.Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Registration Numbers</h5>
+                            <!-- <img src="" alt="Registration Numbers" style="width:300px;height:300px;"> -->
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-back3">
+                                <a href="https://kimfrans.github.io/registration_numbers/">Click here to visit Registration Numbers</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis commodo quam vel vehicula.Lorem ipsum dolor sit amet. </p>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row2">
-                <div class="descrip-heading">
-                    <h2>Brief description of me</h2>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Matching Days</h5>
+                            <!-- <img src="" alt="matchings days" style="width:300px;height:300px;"> -->
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-back4">
+                                <a href="https://kimfrans.github.io/matching-days/">Click here to visit Matching Days</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis commodo quam vel vehicula.Lorem ipsum dolor sit amet.</p>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="description">
-                    <p>
-                        I'd describe myself as someone who is motivated, committed and ambitious. I believe in team-work and collaboration, for the simple reason that working in a team with a collaborative spirit is important when the need arises. Interity and authenticity are important to me. I do what I can to continue to improve and be the best I can be at whatever I do. I am accountable and I believe by taking responsibility for my actions and results, I have the ability to make the choices necessary for a better outcome or results the next time around. I don't let tough decisions control me. Instead, I evaluate  them and decide the best way to approach the situation for the best results. I am hardworking and set reasonable goals for myself. Once those are in place, I can then back out of them and create smaller goals to accomplish so I can continuously evaluate my performance. I strive to do my best for whatever task is presented to me.
-                    </p>
+            </div>
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Greetings Webapp</h5>
+                            <!-- <img src="" alt="greetings with database" style="width:300px;height:300px;"> -->
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-back5">
+                                <a href="https://kim-greetings-webapp.herokuapp.com/">Click here to visit Greetings Webapp</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis commodo quam vel vehicula.Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Registration Numbers Webapp</h5>
+                            <!-- <img src="" alt="registrations with database" style="width:300px;height:300px;"> -->
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="flip-back6">
+                                <a href="https://registrations-webapp.herokuapp.com/">Click here to visit Registration Numbers Webapp</a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque facilisis commodo quam vel vehicula.Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer">
-                <h4>Get in touch!</h4>
-                <ul class="contact">
-                    <li>Cell : 0712001711</li>
-                    <li>E-mail : kimfrans34@gmail.com</li>
-                    <li>IG : kim_frans02</li>
-                </ul>
-            </div>
 
-    
-        <!-- </div>  -->
+        </div>
+
+
+
+        <div class="footer">
+            <h4>Get in touch!</h4>
+            <ul class="contact">
+                <li>Cell : 0712001711</li>
+                <li>E-mail : kimfrans34@gmail.com</li>
+                <li>IG : kim_frans02</li>
+            </ul>
+        </div>
+
+
+
 
     </div>
- 
 
-    
+
+
 </body>
+
 </html>
